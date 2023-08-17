@@ -1,0 +1,20 @@
+body {
+    background-color: #c4302b;
+    font-family: 'Roboto', sans-serif;
+}
+
+#selecID {
+    color:white;
+}
+
+.selecClass {
+    color:aqua;
+    
+}
+
+
+/*id (#) se usa para 1 elemnto
+  class (.) para muchos elemntos. 
+  En el html id="nombre"
+             class="nombre" se puede reusar*/ 
+
