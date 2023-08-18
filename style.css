@@ -1,7 +1,13 @@
 body {
     font-family: 'Inconsolata', monospace;
     font-family: 'Roboto', sans-serif;
-
+    margin: 0;
+    height: 100%;
+    background-image: linear-gradient(to top, #080808 77%, #b1901c 160%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
 }
 
 #encabezado {
@@ -11,30 +17,179 @@ body {
 }
 
 #titulo {
-    width: 50%;
+    width: 55%;
     position: absolute;
     text-align: right;
-    
-    font-size: 25px;
-    
+    font-size: 28px;
+    top: 5px;
 }
 
 #imgtitulo {
-    width: 50%;
+    width: 45%;
     position: absolute;
-    left: 50%;
-    top: 0%;
-
+    left: 49%;
 }
 
 #imgtitulo > img {
-    margin-left: 4%;
-    width: 45%;
+    margin-left: 15%;
+    width: 310px;
     height: 150px;
 }
 
 #parrafo {
-    
+    position: relative;
     width: 100%;
     height: 200px;
+    left: 275px;
 }
+
+#parrafo > p {
+    width: 60%;
+    height: 250px;
+    text-align: center;
+    position: absolute;
+    top: 150px;
+}
+
+#parrafo > h2 {
+    width: 60%;
+    height: 250px;
+    text-align: center;
+    position: absolute;
+    top: 270px;
+}
+
+#suscri {
+    text-align: center;
+    margin-left: 7%;
+    font-size: 20px;
+    margin-top: 15%;
+}
+
+#info {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+#form {
+    width: 40%;
+    position: absolute;
+    font-size: 20px;
+    left: 0px;
+}
+
+#boton {
+    width: 45%;
+    position: absolute;
+    left: 60%;
+    top: 25px;
+    margin-left: 5%;
+}
+.form{
+    width: 100%;
+    height: 60px;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+    left: 400px;
+}
+.form input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+}
+.form .lbl-nombre{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 3px;
+    pointer-events: none;
+    border-bottom: 1px solid #ffffff;
+}
+.form .lbl-nombre:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #ffffff;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-nomb{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form input:focus + .lbl-nombre .text-nomb,.form input:valid + .lbl-nombre .text-nomb{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #ffffff;
+}
+.form input:focus + .lbl-nombre:after, .form input:valid + .lbl-nombre:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form{
+    width:85%;
+}
+}
+#botoncito {
+    font-size: 15px;
+    padding: 10px 20px;
+    background-color: #f12a2a;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #botoncito:hover {
+    background-color: #f12a2a;
+  }
+  
+  #botoncito:active {
+    background-color: #f12a2a;
+  }
+
+  #vinculos {
+    width: 100%;
+    position: relative;
+    height: 100px;
+    margin-top: 30px;
+  }
+
+  #face {
+    width: 50%;
+    position: absolute;
+    height: 20px;
+    right: 10px;
+    top: -1px;
+  }
+
+  #face > img {
+    width: 40px;
+    height: 40px;
+  }
+
+  #google {
+    width: 50%;
+    position: absolute;
+    height: 20px;
+    right: -70px;
+  }
+
+  #google > img {
+    width: 40;
+    height: 40px;
+  }
